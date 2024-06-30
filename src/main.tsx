@@ -9,20 +9,24 @@ import {
 import Home from './components/home.component.tsx';
 import { SignUp } from './components/signup.component.tsx';
 import SignIn from './components/signIn.component.tsx';
+import Services from './components/services.component.tsx';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     Component: Home,
-    } , {
-      path: '/sign-up',
-      Component: SignUp,
-    }, {
-      path: '/sign-in',
-      Component: SignIn,
-    }                                    
-  ]);
+  }, {
+    path: '/sign-up',
+    Component: SignUp,
+  }, {
+    path: '/sign-in',
+    Component: SignIn,
+  }, {
+    path: '/services',
+    Component: Services,
+  }
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
